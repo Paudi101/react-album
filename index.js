@@ -9,7 +9,7 @@ const App = () => (
   //Not html this is JSX - Still javascript syntactic sugar makes our
   //life easier to read. (bablejs.io)
   //Self closing
-  <Header />
+  <Header headerText={'Albums'} />
   );
 // Render it to the device1
 AppRegistry.registerComponent('albums', () => App);

@@ -2,13 +2,13 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 //Make my component
-const Header = () => {
+const Header = (props) => {
   //Ignore this error - generally when function is multiple line use the other way
     const { textStyle, viewStyle } = styles;
 
     return (
       <View style={viewStyle}>
-        <Text style={textStyle}>Albums</Text>
+        <Text style={textStyle}>{props.headerText}</Text>
       </View>
     );
 };
