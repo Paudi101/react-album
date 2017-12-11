@@ -1,7 +1,8 @@
 import React, { Component } from 'react'; //Get react & Componet from lib
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
+
 //When using class based comp we need to add a render mehtod to return JSX
 class AlbumList extends Component {
   state = { albums: [] }; //Initial state (Not for modification)
@@ -20,9 +21,10 @@ class AlbumList extends Component {
   render() {
     console.log(this.state);
     return (
-      <View>
+      //What ever is in the view is now scrollable
+      <ScrollView>
         {this.renderAlbums()}
-      </View>
+      </ScrollView>
     );
   }
 }

@@ -10,8 +10,8 @@ import AlbumList from './src/components/AlbumList';
 const App = () => (
   //Not html this is JSX - Still javascript syntactic sugar makes our
   //life easier to read. (bablejs.io)
-  //Self closing
-    <View>
+  //Expands the component to take up entire area of screen
+    <View style={{ flex: 1 }}>
       <Header headerText={'Albums'} />
       <AlbumList />
     </View>
